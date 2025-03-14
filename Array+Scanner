@@ -1,0 +1,19 @@
+        int opcao;
+        ArrayList <String> listadecompras = new ArrayList <>();
+        
+        do{
+        
+        Scanner texto = new Scanner(System.in);
+        System.out.println("coloque os itens");
+        String produto = texto.nextLine();
+        
+        listadecompras.add(produto);
+        Scanner numero = new Scanner(System.in);
+        System.out.println("digite 1- continuar 2- parar ");
+        opcao = numero.nextInt();
+        
+        }while(opcao != 2);
+        System.out.println("Programa encerrado por Deus");
+        System.out.println("Minha lista de compras" + listadecompras);
+        
+    }
